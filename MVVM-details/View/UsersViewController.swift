@@ -26,7 +26,6 @@ class UsersViewController: UIViewController {
         self.navigationItem.title = "Acoman!!"
         usersTableView.delegate = self
         usersTableView.dataSource = self
-        usersTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
     }
 
@@ -43,9 +42,17 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
+
         let user = viewModel.user(at: indexPath.row)
-        cell.textLabel?.text = user.name
+        cell.nameLabel.text = user.name
+        cell.emaillabel.text = user.email
+        
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }

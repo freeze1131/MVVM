@@ -19,6 +19,44 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0NO-po-6kJ">
                                 <rect key="frame" x="12" y="133" width="369" height="685"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="100" id="Mp8-4o-4cH" customClass="CustomTableViewCell" customModule="MVVM_details" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="369" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mp8-4o-4cH" id="8Jf-db-35c">
+                                            <rect key="frame" x="0.0" y="0.0" width="369" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZI-o6-Ozf">
+                                                    <rect key="frame" x="32" y="19" width="50" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="164-NH-eDA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfd-an-Sc8">
+                                                    <rect key="frame" x="32" y="52" width="42" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Xfd-an-Sc8" firstAttribute="top" secondItem="BZI-o6-Ozf" secondAttribute="bottom" constant="12" id="GLH-39-o0Z"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Xfd-an-Sc8" secondAttribute="bottom" constant="8" id="Rtn-qc-MIX"/>
+                                                <constraint firstItem="BZI-o6-Ozf" firstAttribute="top" secondItem="8Jf-db-35c" secondAttribute="topMargin" constant="8" id="bL4-34-Y8W"/>
+                                                <constraint firstItem="Xfd-an-Sc8" firstAttribute="leading" secondItem="8Jf-db-35c" secondAttribute="leadingMargin" constant="12" id="cvi-ty-Leo"/>
+                                                <constraint firstItem="BZI-o6-Ozf" firstAttribute="leading" secondItem="8Jf-db-35c" secondAttribute="leadingMargin" constant="12" id="vbu-S7-sW7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emaillabel" destination="Xfd-an-Sc8" id="cfE-mI-bdh"/>
+                                            <outlet property="nameLabel" destination="BZI-o6-Ozf" id="NYh-bv-oSJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
