@@ -48,16 +48,6 @@
 			path = "MVVM-details";
 			sourceTree = "<group>";
 		};
-		64EA0D512D577E430006FF79 /* MVVM-detailsTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "MVVM-detailsTests";
-			sourceTree = "<group>";
-		};
-		64EA0D5B2D577E430006FF79 /* MVVM-detailsUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "MVVM-detailsUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				64EA0D3A2D577E420006FF79 /* MVVM-details */,
-				64EA0D512D577E430006FF79 /* MVVM-detailsTests */,
-				64EA0D5B2D577E430006FF79 /* MVVM-detailsUITests */,
 				64EA0D392D577E420006FF79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +131,6 @@
 			dependencies = (
 				64EA0D502D577E430006FF79 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				64EA0D512D577E430006FF79 /* MVVM-detailsTests */,
-			);
 			name = "MVVM-detailsTests";
 			packageProductDependencies = (
 			);
@@ -165,9 +150,6 @@
 			);
 			dependencies = (
 				64EA0D5A2D577E430006FF79 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				64EA0D5B2D577E430006FF79 /* MVVM-detailsUITests */,
 			);
 			name = "MVVM-detailsUITests";
 			packageProductDependencies = (

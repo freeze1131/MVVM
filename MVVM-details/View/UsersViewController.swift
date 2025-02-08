@@ -40,7 +40,7 @@ class UsersViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetail" {
-            if let destinationVC = segue.destination as? UserDetailVewController,
+            if let destinationVC = segue.destination as? UserDetailViewController,
                let indexPath = sender as? IndexPath {
                 let user = viewModel.user(at: indexPath.row)
                 destinationVC.data = user
