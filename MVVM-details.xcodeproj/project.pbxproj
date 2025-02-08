@@ -33,7 +33,7 @@
 		64EA0D602D577E430006FF79 /* Exceptions for "MVVM-details" folder in "MVVM-details" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = 64EA0D372D577E420006FF79 /* MVVM-details */;
 		};
