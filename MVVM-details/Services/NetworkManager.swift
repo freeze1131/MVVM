@@ -8,9 +8,12 @@
 import Foundation
 
 struct NetworkManager {
+    // To use it inside ViewModel
     static let shared = NetworkManager()
+    // URL to parse
     private let baseURL = "https://jsonplaceholder.typicode.com/users"
 
+    // Fetching the users from the URL
     func fetchUsers(completion: @escaping (Result<[UserData], Error>) -> Void) {
         guard let url = URL(string: baseURL) else { return }
 

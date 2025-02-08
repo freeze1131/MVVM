@@ -11,6 +11,7 @@ class UserDataViewModel {
     var users: [UserData] = []
     var onUsersUpdated: (() -> Void)?
 
+    // Fetching the users and assinging to the users array
     func fetchUsers() {
         NetworkManager.shared.fetchUsers { [weak self] result in
             switch result {
@@ -23,10 +24,12 @@ class UserDataViewModel {
         }
     }
 
+    //To use inside tableview row count
     func numberOfUsers() -> Int {
         return users.count
     }
 
+    //To use when navigating to the userDetail VC
     func user(at index: Int) -> UserData {
         return users[index]
     }

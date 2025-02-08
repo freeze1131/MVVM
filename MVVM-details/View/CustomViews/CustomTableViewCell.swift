@@ -8,7 +8,7 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-    
+    // Outlets
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emaillabel: UILabel!
     
