@@ -14,6 +14,7 @@ class UsersViewController: UIViewController {
     private let tableView = UITableView()
     private let viewModel = UserDataViewModel()
 
+    @IBOutlet weak var usersTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -22,17 +23,16 @@ class UsersViewController: UIViewController {
     }
 
     private func setupUI() {
-        title = "Users"
-        view.addSubview(tableView)
-        tableView.frame = view.bounds
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.navigationItem.title = "Acoman!!"
+        usersTableView.delegate = self
+        usersTableView.dataSource = self
+        usersTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
     }
 
     private func setupBindings() {
         viewModel.onUsersUpdated = { [weak self] in
-            self?.tableView.reloadData()
+            self?.usersTableView.reloadData()
         }
     }
 }

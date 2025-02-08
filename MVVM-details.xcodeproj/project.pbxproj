@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		64EA0D602D577E430006FF79 /* Exceptions for "MVVM-details" folder in "MVVM-details" target */ = {
+		64EA0E092D5788990006FF79 /* Exceptions for "MVVM-details" folder in "MVVM-details" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/Info.plist,
@@ -43,7 +43,7 @@
 		64EA0D3A2D577E420006FF79 /* MVVM-details */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				64EA0D602D577E430006FF79 /* Exceptions for "MVVM-details" folder in "MVVM-details" target */,
+				64EA0E092D5788990006FF79 /* Exceptions for "MVVM-details" folder in "MVVM-details" target */,
 			);
 			path = "MVVM-details";
 			sourceTree = "<group>";
@@ -291,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 353X835TQ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM-details/Info.plist";
+				INFOPLIST_FILE = "MVVM-details/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 353X835TQ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM-details/Info.plist";
+				INFOPLIST_FILE = "MVVM-details/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
