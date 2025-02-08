@@ -23,7 +23,10 @@ class UsersViewController: UIViewController {
     }
 
     private func setupUI() {
-        self.navigationItem.title = "Acoman!!"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.largeTitleDisplayMode = .always
+        self.navigationItem.title = "Users"
+        
         usersTableView.delegate = self
         usersTableView.dataSource = self
         
@@ -34,6 +37,18 @@ class UsersViewController: UIViewController {
             self?.usersTableView.reloadData()
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetail" {
+            if let destinationVC = segue.destination as? UserDetailVewController,
+               let indexPath = sender as? IndexPath {
+                let user = viewModel.user(at: indexPath.row)
+                destinationVC.data = user
+            }
+        }
+    }
+
+
 }
 
 extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
@@ -55,4 +70,11 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ShowDetail", sender: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+    
 }

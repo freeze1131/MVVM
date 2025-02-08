@@ -71,11 +71,28 @@
                     <navigationItem key="navigationItem" id="rLT-hD-dw9"/>
                     <connections>
                         <outlet property="usersTableView" destination="0NO-po-6kJ" id="93W-ch-XRw"/>
+                        <segue destination="bHH-QP-XO8" kind="show" identifier="ShowDetail" id="Bk4-Ov-ET4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
+        </scene>
+        <!--User Detail Vew Controller-->
+        <scene sceneID="nyQ-z9-GTL">
+            <objects>
+                <viewController id="bHH-QP-XO8" customClass="UserDetailVewController" customModule="MVVM_details" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yQC-9j-awZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="htc-od-UoS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wkz-4C-hrg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEC-IB-U6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="-36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PoQ-Hm-XMO">
